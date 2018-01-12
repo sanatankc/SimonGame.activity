@@ -7969,10 +7969,11 @@ var App = function (_Component) {
       return [_react2.default.createElement(_ToolBar2.default, {
         onStartClick: this.reset.bind(this),
         onLevelClick: this.handleStrict.bind(this),
-        strict: this.state.strict
+        strict: this.state.strict,
+        key: '0-tool'
       }), _react2.default.createElement(
         'div',
-        { id: 'canvas' },
+        { id: 'canvas', key: '1-canvas' },
         _react2.default.createElement(
           _App.Main,
           null,

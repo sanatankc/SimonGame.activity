@@ -183,8 +183,9 @@ class App extends Component {
         onStartClick={this.reset.bind(this)}
         onLevelClick={this.handleStrict.bind(this)}
         strict={this.state.strict}
+        key={'0-tool'}
       />,
-      <div id='canvas'>
+      <div id='canvas' key={'1-canvas'}>
         <Main>
           <Container>
             <MainCircle>
