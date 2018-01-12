@@ -119,7 +119,7 @@ class App extends Component {
 
     if (allElementsEqual && isSameLength) {
       this.onWin()
-    } else if (allElementsEqual && !isSameLength) {\
+    } else if (allElementsEqual && !isSameLength) {
     } else {
       this.losingAnimation(this.onLose)
     }
