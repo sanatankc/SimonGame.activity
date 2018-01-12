@@ -112,7 +112,6 @@ class App extends Component {
   }
 
   validateCards(cards) {
-    console.log(cards)
     const allElementsEqual = cards.every((card, i) => (
       this.state.gameState[i] === card
     ))
@@ -120,8 +119,7 @@ class App extends Component {
 
     if (allElementsEqual && isSameLength) {
       this.onWin()
-    } else if (allElementsEqual && !isSameLength) {
-      console.log('Game is Still Running!!!')
+    } else if (allElementsEqual && !isSameLength) {\
     } else {
       this.losingAnimation(this.onLose)
     }
